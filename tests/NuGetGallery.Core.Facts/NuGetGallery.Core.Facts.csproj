@@ -73,8 +73,8 @@
     <Reference Include="NuGet.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NuGet.Common.4.3.0-preview1-2524\lib\net45\NuGet.Common.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Frameworks, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NuGet.Frameworks.4.3.0-preview1-2524\lib\net45\NuGet.Frameworks.dll</HintPath>
+    <Reference Include="NuGet.Frameworks, Version=4.3.0.5, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NuGet.Frameworks.4.3.0\lib\net45\NuGet.Frameworks.dll</HintPath>
     </Reference>
     <Reference Include="NuGet.Logging, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NuGet.Logging.3.5.0-beta-1160\lib\net45\NuGet.Logging.dll</HintPath>
