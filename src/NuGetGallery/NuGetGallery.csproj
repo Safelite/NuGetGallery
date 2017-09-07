@@ -424,11 +424,11 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NuGet.Common.4.3.0-preview1-2524\lib\net45\NuGet.Common.dll</HintPath>
+    <Reference Include="NuGet.Common, Version=4.3.0.5, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NuGet.Common.4.3.0\lib\net45\NuGet.Common.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Frameworks, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NuGet.Frameworks.4.3.0-preview1-2524\lib\net45\NuGet.Frameworks.dll</HintPath>
+    <Reference Include="NuGet.Frameworks, Version=4.3.0.5, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NuGet.Frameworks.4.3.0\lib\net45\NuGet.Frameworks.dll</HintPath>
     </Reference>
     <Reference Include="NuGet.Packaging, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NuGet.Packaging.4.3.0-preview1-2524\lib\net45\NuGet.Packaging.dll</HintPath>
@@ -2202,6 +2202,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\..\packages\OctoPack.3.6.1\build\OctoPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\OctoPack.3.6.1\build\OctoPack.targets'))" />
   </Target>
   <PropertyGroup>
     <PreBuildEvent>
@@ -2210,4 +2211,5 @@
       copy "$(ProjectDir)..\Bootstrap\dist\js\bootstrap.js" "$(ProjectDir)Scripts\gallery" &gt;NUL
 </PreBuildEvent>
   </PropertyGroup>
+  <Import Project="..\..\packages\OctoPack.3.6.1\build\OctoPack.targets" Condition="Exists('..\..\packages\OctoPack.3.6.1\build\OctoPack.targets')" />
 </Project>
